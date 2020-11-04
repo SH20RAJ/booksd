@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteRule ^upload uploadbooks.php
+RewriteRule ^drive drvupload.php
+
+RewriteRule ^search/([/_0-9a-zA-Z]+)$ search.php?x=$1 [NC,L]
+
+
+#RewriteRule ^books/(.*) viewx.php?x=$1 [NC,L]
+RewriteRule ^books/(.*)-(.*) viewx.php?x=$1&t=$2 [NC,L]
+
+
+RewriteRule ^book/(.*)$ redirect.php?x=$1 [NC,L]
+RewriteRule ^author/(.*) asset/author.php?x=$1 [NC,L]
+
+RewriteRule ^user log
+RewriteRule ^logout assets/logout.php
+RewriteRule ^contact assets/contact
