@@ -15,3 +15,4 @@ RewriteRule ^author/(.*) asset/author.php?x=$1 [NC,L]
 RewriteRule ^user log
 RewriteRule ^logout assets/logout.php
 RewriteRule ^contact assets/contact
+RewriteRule ^preview/(.*) preview.php?id=$1 [NC,L]
